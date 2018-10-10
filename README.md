@@ -10,9 +10,12 @@ Create a tool used for making snapshots of AWS EC2 instances
 -Configure AWS with the created credentials using 'aws configure -- profile [username]'
 
 ## Running snapshotTool
+ use the following command to start any of the available functions
+ 
+'python main.py <command> <subcommand> <--project=PROJECT>'
 
-$python main.py <command> <--project=PROJECT>
+where *command* is instances, volumes or snapshots
 
-where *command* is list, start or stop
+and *subcommand* depends on the command
 
-where *PROJECT* is the project tag of the instance and is optional
+while *PROJECT* is the project tag of the instance and is optional
